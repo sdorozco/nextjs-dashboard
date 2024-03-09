@@ -4,7 +4,7 @@ import Link from 'next/link';
 import styles from '@/app/ui/home.module.css';
 import Image from 'next/image';
 import AcmeLogo from './ui/acme-logo';
-import { useEffect, useRef } from 'react';
+import { useRef } from 'react';
 export default function Page() {
   const imageRef = useRef(null);
 
