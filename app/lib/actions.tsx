@@ -58,8 +58,8 @@ export async function createInvoice(prevState: State, formData: FormData) {
     };
   }
 
-  revalidatePath('../../invoices');
-  redirect('../../invoices');
+  revalidatePath('../invoices');
+  redirect('../invoices');
 }
 
 // Use Zod to update the expected types
@@ -96,8 +96,8 @@ export async function updateInvoice(
     return { message: 'Database Error: Failed to Update Invoice.' };
   }
 
-  revalidatePath('invoices');
-  redirect('invoices');
+  revalidatePath('../../invoices');
+  redirect('../../invoices');
 }
 
 export async function deleteInvoice(id: string) {
