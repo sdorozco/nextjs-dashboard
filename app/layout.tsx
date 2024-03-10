@@ -1,6 +1,7 @@
 import '@/app/ui/global.css';
 import { Inter } from 'next/font/google';
 import { Metadata } from 'next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 export const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
@@ -19,7 +20,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} antialiased`}>{children}</body>
+      <body className={`${inter.className} antialiased`}>
+        {children}
+        <SpeedInsights />
+      </body>
     </html>
   );
 }
