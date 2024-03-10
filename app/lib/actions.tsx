@@ -58,8 +58,8 @@ export async function createInvoice(prevState: State, formData: FormData) {
     };
   }
 
-  revalidatePath('invoices');
-  redirect('invoices');
+  revalidatePath('../../invoices');
+  redirect('../../invoices');
 }
 
 // Use Zod to update the expected types
