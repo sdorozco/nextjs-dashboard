@@ -1,6 +1,6 @@
 import { GlobeAltIcon } from '@heroicons/react/24/outline';
-import { Inter } from 'next/font/google';
-export const inter = Inter({ subsets: ['latin'] });
+import { inter } from '@/app/ui/fonts/fonts';
+
 export default function AcmeLogo() {
   return (
     <div
